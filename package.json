@@ -1,0 +1,15 @@
+{
+  "name": "cah-node-api",
+  "version": "0.0.1",
+  "description": "Cards Against Humanity API",
+  "main": "./lib/index.js",
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Delgado",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^5.0.8"
+  }
+}
