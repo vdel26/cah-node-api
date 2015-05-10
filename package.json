@@ -4,7 +4,7 @@
   "description": "Venezuelan Cards Against Humanity API",
   "main": "./src/index.js",
   "scripts": {
-    "start": "node --harmony ./src/index.js",
+    "start": "node --harmony ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Victor Delgado",
@@ -13,6 +13,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "jade": "^1.9.2"
   }
 }
