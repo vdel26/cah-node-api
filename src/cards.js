@@ -850,4 +850,4 @@ const questions = [
   "_____? There's an app for that.",
 ];
 
-export default { questions: questions, answers: answers };
+module.exports = { questions: questions, answers: answers };

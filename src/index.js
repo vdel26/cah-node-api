@@ -1,28 +1,33 @@
-import http from 'http';
-import { questions, answers } from './cards';
+var http = require('http');
+var Cards = require('./cards');
+var app = require('express')();
 
-const { floor: floor, random: random } = Math;
+var questions = Cards.questions;
+var answers = Cards.answers;
+
 const nquestions = questions.length, nanswers = answers.length;
-const question = () => { return questions[floor(random()*nquestions)] };
-const answer = () => { return answers[floor(random()*nanswers)] };
+const question = () => { return questions[Math.floor(Math.random()*nquestions)] };
+const answer = () => { return answers[Math.floor(Math.random()*nanswers)] };
 const pick = () => { return { question: question(), answer: answer() } };
 
-http.createServer((req, res) => {
-  res.writeHead(200, 'Content-Type: application/json');
+app.get('/question', (req, res) => res.json(question()));
+app.get('/questions', (req, res) => res.json(questions));
 
-  if (req.url === '/question')
-    res.write(question());
-  else if (req.url === '/answer')
-    res.write(answer());
-  else if (req.url === '/pick')
-    res.write(JSON.stringify(pick()));
-  else
-    res.write(`USAGE:
-               /question - get a random white card
-               /answer - get a random black card
-               /pick - get a question and answer randomly chosen`);
+app.get('/answer', (req, res) => res.json(answer()));
+app.get('/answers', (req, res) => res.json(answers));
 
-  return res.end();
+app.get('/pick', (req, res) => {
+    res.send();
+});
 
-}).listen(parseInt(process.env.PORT) || 5000);
+app.get('/', (req, res) => res.send());
 
+
+var server = app.listen(3000, function () {
+
+  var host = server.address().address;
+  var port = server.address().port;
+
+  console.log('VCAH API listening at http://%s:%s', host, port);
+
+});
