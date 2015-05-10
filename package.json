@@ -15,5 +15,8 @@
   "dependencies": {
     "express": "^4.12.3",
     "jade": "^1.9.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11"
   }
 }
