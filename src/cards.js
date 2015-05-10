@@ -664,7 +664,7 @@ const answers = [
   "Vigilantes.",
   "Aplausos.",
   "Vikingos.",
-  "Vomitar en medio de una paja/",
+  "Vomitar en medio de una paja.",
   "Esperar al matrimonio.",
   "Despertar en bolas en Petare.",
   "Sexo con marionetas de terciopelo.",
@@ -687,9 +687,9 @@ const answers = [
   "Voto femenino.",
   "Bla bla bla.",
   "Paz mundial.",
-  "CHAVEZ DE MIERDA",
+  "ESTE CHAVEZ DE MIERDA",
   "Hongo vaginal.",
-  "Iron Man",
+  "Iron Man"
 ];
 
 
@@ -832,7 +832,7 @@ const questions = [
   "_____. It's a trap!",
   "_____. That's how I want to die.",
   "_____: good to the last drop.",
-  "_____? There's an app for that.",
+  "_____? There's an app for that."
 ];
 
 module.exports = { questions: questions, answers: answers };
