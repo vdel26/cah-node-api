@@ -16,13 +16,13 @@ TODA colaboración es bienvenida. Por ahora es un API con las cartas. Se viene:
 
 ## API
 
-- GET _question_: devuelve una carta negra.
+- GET _/api/question_: devuelve una carta negra.
 
-- GET _questions_: devuelve todas las cartas negras
+- GET _/api/questions_: devuelve todas las cartas negras
 
-- GET _answer_: devuelve una carta blanca.
+- GET _/api/answer_: devuelve una carta blanca.
 
-- GET _answers_: devuelve todas las cartas blancas.
+- GET _/api/answers_: devuelve todas las cartas blancas.
 
 ## Instalación
 

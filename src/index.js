@@ -10,11 +10,11 @@ const question = () => { return questions[Math.floor(Math.random()*nquestions)] 
 const answer = () => { return answers[Math.floor(Math.random()*nanswers)] };
 const pick = () => { return { question: question(), answer: answer() } };
 
-app.get('/question', (req, res) => res.json(question()));
-app.get('/questions', (req, res) => res.json(questions));
+app.get('/api/question', (req, res) => res.json(question()));
+app.get('/api/questions', (req, res) => res.json(questions));
 
-app.get('/answer', (req, res) => res.json(answer()));
-app.get('/answers', (req, res) => res.json(answers));
+app.get('/api/answer', (req, res) => res.json(answer()));
+app.get('/api/answers', (req, res) => res.json(answers));
 
 app.get('/pick', (req, res) => {
     res.send();
