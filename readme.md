@@ -12,6 +12,7 @@ TODA colaboración es bienvenida. Por ahora es un API con las cartas. Se viene:
 
 - Un front web para poder imprimir las cartas (básicamente una vista html con una hoja de estilos de impresión).
 - Faltan traducciones.
+- Un app para jugar (near future).
 
 ## API
 
