@@ -1,10 +1,13 @@
 var http = require('http');
 var path = require('path');
-var Api = require('./api');
-var app = require('express')();
+var Api = require('./lib/api');
+var express = require('express');
+var app = express();
 
 // view engine setup
+console.log('starting')
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'jade');
 
 app.use('/api', Api);

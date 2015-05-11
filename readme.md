@@ -33,4 +33,12 @@ npm install
 npm start
 ```
 
-Y listo. Ya el API estará escuchando en `http://localhost:3000` or en la variable `PORT`.
+Si buscas de acelerar el workflow, necesitarás [Gulp](http://gulpjs.com/)
+
+```
+npm install --global gulp
+```
+
+Puedes ejecutar el server con `gulp serve` para recargarlo cuando hayan cambios en lib o tener Livereload haciendo `gulp front` en otra terminal para solo recargar el browser automaticamente cuando hayan cambios en vistas o recursos estáticos.
+
+Y listo. Ya el API estará escuchando en `http://localhost:3000` or en el puerto que indique la variable `PORT`.

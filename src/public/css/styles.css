@@ -1,0 +1,7 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #232323;
+  -webkit-font-smoothing: antialiased; }
+  body h1 {
+    font-size: 5rem;
+    line-height: 3rem; }
