@@ -16,7 +16,7 @@ app.set('view engine', 'jade');
 app.use('/api', Api);
 
 app.get('/', (req, res) => res.render('index'));
-app.get('/print', (req, res) => res.render('print',{white: Cards.answers, black: Cards.questions}));
+app.get('/print', (req, res) => res.render('print',{whiteCards: Cards.answers, blackCards: Cards.questions}));
 
 
 // catch 404 and forward to error handler
