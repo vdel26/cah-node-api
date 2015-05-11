@@ -12,7 +12,6 @@ gulp.task('sass', function() {
 });
 
 gulp.task('serve', function () {
-  console.log("hey!")
   nodemon({
       script: './src/app.js',
       ext: 'js',

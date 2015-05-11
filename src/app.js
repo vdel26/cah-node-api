@@ -2,6 +2,7 @@ var http = require('http');
 var path = require('path');
 var Api = require('./lib/api');
 var express = require('express');
+var Cards = require('./cards');
 var app = express();
 
 // view engine setup
@@ -13,6 +14,7 @@ app.set('view engine', 'jade');
 app.use('/api', Api);
 
 app.get('/', (req, res) => res.render('index'));
+app.get('/print', (req, res) => res.render('print',{white: Cards.answers, black: Cards.questions}));
 
 
 // catch 404 and forward to error handler
@@ -53,6 +55,6 @@ var server = app.listen(process.env.PORT || 3000, function () {
   var host = server.address().address;
   var port = server.address().port;
 
-  console.log('VCAH API listening at http://%s:%s', host, port);
+  console.log('Caracas Against Humanity listening at http://%s:%s', host, port);
 
 });
