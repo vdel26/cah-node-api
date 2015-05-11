@@ -21,7 +21,7 @@ gulp.task('serve', function () {
       }
     })
     .on('restart', function () {
-      console.log('restarted!')
+      console.log('restarted!');
     })
 })
 
