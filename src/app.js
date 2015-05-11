@@ -1,8 +1,8 @@
 var http = require('http');
 var path = require('path');
 var Api = require('./lib/api');
+var Cards = require('./lib/cards');
 var express = require('express');
-var Cards = require('.lib/cards');
 var app = express();
 
 // view engine setup
