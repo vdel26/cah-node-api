@@ -1,4 +1,5 @@
 # Caracas Against Humanity
+[![Build Status](https://travis-ci.org/cris7ian/caracas-against-humanity.svg?branch=master)](https://travis-ci.org/cris7ian/caracas-against-humanity)
 
 Sí, es un API con las cartas de Cards Against Humanity traducidas al venezolano.
 
