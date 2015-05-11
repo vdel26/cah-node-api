@@ -16,4 +16,4 @@ router.get('/questions', (req, res) => res.json(questions));
 router.get('/answer', (req, res) => res.json(answer()));
 router.get('/answers', (req, res) => res.json(answers));
 
-module.exports = router
+module.exports = router;

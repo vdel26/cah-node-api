@@ -5,8 +5,10 @@ var Cards = require('./lib/cards');
 var express = require('express');
 var app = express();
 
+var hey = 10;
+
 // view engine setup
-console.log('starting')
+console.log('starting');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'jade');
