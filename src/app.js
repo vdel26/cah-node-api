@@ -3,11 +3,13 @@ var path = require('path');
 var Api = require('./lib/api');
 var Cards = require('./lib/cards');
 var express = require('express');
+var logger = require('morgan');
 var app = express();
 
 // view engine setup
 console.log('starting');
 app.set('views', path.join(__dirname, 'views'));
+app.use(logger('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'jade');
 

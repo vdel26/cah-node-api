@@ -14,7 +14,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.12.3",
-    "jade": "^1.9.2"
+    "jade": "^1.9.2",
+    "morgan": "^1.5.3"
   },
   "devDependencies": {
     "gulp": "^3.8.11",
