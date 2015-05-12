@@ -5,8 +5,6 @@ var Cards = require('./lib/cards');
 var express = require('express');
 var app = express();
 
-var hey = 10;
-
 // view engine setup
 console.log('starting');
 app.set('views', path.join(__dirname, 'views'));
@@ -16,7 +14,10 @@ app.set('view engine', 'jade');
 app.use('/api', Api);
 
 app.get('/', (req, res) => res.render('index'));
-app.get('/print', (req, res) => res.render('print',{whiteCards: Cards.answers, blackCards: Cards.questions}));
+app.get('/print', (req, res) => res.render('print', {
+  whiteCards: Cards.answers,
+  blackCards: Cards.questions
+}));
 
 
 // catch 404 and forward to error handler
@@ -52,7 +53,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-var server = app.listen(process.env.PORT || 3000, function () {
+var server = app.listen(process.env.PORT || 3000, function() {
 
   var host = server.address().address;
   var port = server.address().port;

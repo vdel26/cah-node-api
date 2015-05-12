@@ -835,4 +835,7 @@ const questions = [
   "_____? There's an app for that."
 ];
 
-module.exports = { questions: questions, answers: answers };
+module.exports = {
+  questions: questions,
+  answers: answers
+};
