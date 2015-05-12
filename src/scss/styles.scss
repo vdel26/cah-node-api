@@ -1,0 +1,87 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #232323;
+  -webkit-font-smoothing: antialiased;
+
+  h1 {
+    font-size: 5rem;
+    line-height: 3rem;
+  }
+
+  .clear{
+    clear: both;
+    height: 10px;
+  }
+
+ .cards {
+    display: none;
+  }
+
+  .white-cards, .black-cards {
+    overflow: hidden;
+  }
+
+  .card {
+    width: 6.32cm;
+    margin: 20px;
+    height: 8.6cm;
+    margin: 0.3mm;
+    float:left;
+    border: 2px solid black;
+    font-weight: bold;
+    border-radius: 8px;
+
+    p {
+      padding: 3mm 7mm 3mm 7mm;
+    }
+  }
+
+  .black {
+    background-color: black;
+    color: white;
+  }
+}
+
+#generate {
+  margin-bottom: 20px;
+}
+
+.api{
+  table {
+    width: 100%;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 3mm;
+}
+
+@media print {
+
+  .cards {
+    display: block !important;
+  }
+
+  .no-print, .no-print * {
+      display: none !important;
+  }
+
+  html, body {
+    width: 210mm;
+    height: 297mm;
+
+    .white-cards, .black-cards, .break, .clear {
+      page-break-after: always;
+    }
+
+    .card {
+      width: 6.32cm;
+      height: 8.6cm;
+      margin: 2mm !important;
+      p {
+        padding: 3mm 7mm 3mm 7mm;
+      }
+    }
+  }
+}

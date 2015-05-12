@@ -1,15 +1,30 @@
 {
   "name": "cah-node-api",
   "version": "0.0.1",
-  "description": "Cards Against Humanity API",
-  "main": "./lib/index.js",
+  "description": "Venezuelan Cards Against Humanity API",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node ./lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --harmony ./src/app.js",
+    "test": "./node_modules/mocha/bin/mocha --harmony"
   },
   "author": "Victor Delgado",
+  "contributors": [
+    "Cristian E. Caroli"
+  ],
   "license": "MIT",
+  "dependencies": {
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "morgan": "^1.5.3"
+  },
   "devDependencies": {
-    "babel": "^5.0.8"
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-nodemon": "^2.0.3",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-sass": "^2.0.0",
+    "mocha": "^2.2.4",
+    "request": "^2.55.0",
+    "should": "^6.0.1"
   }
 }

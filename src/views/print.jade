@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  script(type='text/javascript', src='js/print.js')
+  .no-print.
+    Presiona <b>#[span#key ⌘] + p</b> e imprime tus cartas. O haz #[a(href='javascript:window.print()') click].
+  .cards
+    .white-cards
+      each card, index in whiteCards
+        .white.card
+          p= card
+        if ((index+1) % 9 == 0)
+          .clear
+    .black-cards
+      each card, index in blackCards
+        .black.card
+          p=card
+        if ((index+1) % 9 == 0)
+          .clear
