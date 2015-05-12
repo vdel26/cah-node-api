@@ -4,4 +4,4 @@
 //   $("body").addClass("pc");
 // }
 
-javascript:window.print()
+window.print();

@@ -12,8 +12,8 @@ describe('API', function() {
         response.statusCode.should.equal(200);
         JSON.parse(body).should.be.an.Array;
         done(error);
-      })
-    })
+      });
+    });
   });
 
   describe('Get answers', function() {
@@ -23,8 +23,8 @@ describe('API', function() {
         response.statusCode.should.equal(200);
         JSON.parse(body).should.be.an.Array;
         done();
-      })
-    })
+      });
+    });
   });
 
   describe('Get answer', function() {
@@ -34,8 +34,8 @@ describe('API', function() {
         response.statusCode.should.equal(200);
         body.should.be.type('string');
         done();
-      })
-    })
+      });
+    });
   });
 
   describe('Get question', function() {
@@ -45,8 +45,8 @@ describe('API', function() {
         response.statusCode.should.equal(200);
         body.should.be.type('string');
         done();
-      })
-    })
+      });
+    });
   });
 
-})
+});
