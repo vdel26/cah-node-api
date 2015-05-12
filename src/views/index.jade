@@ -1,23 +1,34 @@
 extends layout
 
 block content
-  h1 Caracas Against Humanity
-  p Bienvenido a Caracas Against Humanity.
-  p Acá el API:
-  table
-    tr
-      td GET
-      td #[i /api/question] 
-      td devuelve una carta negra.
-    tr
-      td GET 
-      td #[i /api/questions] 
-      td devuelve todas las cartas negras
-    tr
-      td GET 
-      td #[i /api/answer] 
-      td devuelve una carta blanca.
-    tr
-      td GET 
-      td #[i /api/answers] 
-      td devuelve todas las cartas blancas.
+  .container
+    h1 Caracas Against Humanity
+    p Bienvenido a Caracas Against Humanity.
+    h2 Imprime tus cartas #[a(href='/print', target='_blank') aquí].    
+    .pick.col-md-6
+      h2 Ejemplo
+      input(type="button", class='btn btn-danger' value='generar nueva combinación', id='generate')
+      .example
+        .black.card
+          p#b
+        .white.card
+          p#w
+    .api.col-md-6
+      h2 Acá el API:
+      table
+        tr
+          td GET
+          td #[i /api/question] 
+          td devuelve una carta negra.
+        tr
+          td GET 
+          td #[i /api/questions] 
+          td devuelve todas las cartas negras
+        tr
+          td GET 
+          td #[i /api/answer] 
+          td devuelve una carta blanca.
+        tr
+          td GET 
+          td #[i /api/answers] 
+          td devuelve todas las cartas blancas.

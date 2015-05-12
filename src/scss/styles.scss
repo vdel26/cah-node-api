@@ -13,7 +13,7 @@ body {
     height: 10px;
   }
 
-   .cards {
+ .cards {
     display: none;
   }
 
@@ -23,6 +23,7 @@ body {
 
   .card {
     width: 6.32cm;
+    margin: 20px;
     height: 8.6cm;
     margin: 0.3mm;
     float:left;
@@ -41,6 +42,15 @@ body {
   }
 }
 
+#generate {
+  margin-bottom: 20px;
+}
+
+.api{
+  table {
+    width: 100%;
+  }
+}
 
 @page {
   size: A4;
@@ -68,7 +78,7 @@ body {
     .card {
       width: 6.32cm;
       height: 8.6cm;
-      margin: 2mm;
+      margin: 2mm !important;
       p {
         padding: 3mm 7mm 3mm 7mm;
       }

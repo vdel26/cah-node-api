@@ -14,6 +14,7 @@ body {
     overflow: hidden; }
   body .card {
     width: 6.32cm;
+    margin: 20px;
     height: 8.6cm;
     margin: 0.3mm;
     float: left;
@@ -25,6 +26,12 @@ body {
   body .black {
     background-color: black;
     color: white; }
+
+#generate {
+  margin-bottom: 20px; }
+
+.api table {
+  width: 100%; }
 
 @page {
   size: A4;
@@ -43,6 +50,6 @@ body {
     html .card, body .card {
       width: 6.32cm;
       height: 8.6cm;
-      margin: 2mm; }
+      margin: 2mm !important; }
       html .card p, body .card p {
         padding: 3mm 7mm 3mm 7mm; } }
