@@ -1,4 +1,4 @@
-var should = require('should')
+var should = require('should');
 var request = require('request');
 
 var url = 'http://localhost:' + (process.env.PORT || 3000);
