@@ -1,4 +1,5 @@
 import http from 'http';
+import url from 'url';
 import { questions, answers } from './cards';
 
 const { floor: floor, random: random } = Math;
@@ -10,11 +11,12 @@ const pick = () => { return { question: question(), answer: answer() } };
 http.createServer((req, res) => {
   res.writeHead(200, 'Content-Type: application/json');
 
-  if (req.url === '/question')
+  let path = url.parse(req.url).pathname;
+  if (path === '/question')
     res.write(question());
-  else if (req.url === '/answer')
+  else if (path === '/answer')
     res.write(answer());
-  else if (req.url === '/pick')
+  else if (path === '/pick')
     res.write(JSON.stringify(pick()));
   else
     res.write(`USAGE:
