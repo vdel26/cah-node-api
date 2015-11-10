@@ -1,0 +1,6 @@
+{
+  "name": "Cards Against Humanity API",
+  "description": "A Node.js API for the Cards Against Humanity game",
+  "keywords": ["node", "api"],
+  "repository": "https://github.com/vdel26/cah-node-api"
+}
